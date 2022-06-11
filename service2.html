@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="apptech.css">
+<link rel="stylesheet" type="text/css" href="apptech.html">
+
+<link rel="stylesheet" type="text/css" href="aptabout.html">
+
+<link rel="stylesheet" type="text/css" href="service1.html">
+<link rel="stylesheet" type="text/css" href="service2.html">
+<link rel="stylesheet" type="text/css" href="service3.html">
+
+<link rel="stylesheet" type="text/css" href="carreers.html">
+<link rel="stylesheet" type="text/css" href="pricing.html">
+<link rel="stylesheet" type="text/css" href="ourteam.html">
+<link rel="stylesheet" type="text/css" href="contact.html">
+
+
+
+	<title></title>
+</head>
+<style>
+	section{
+  	    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('service2.jpg');
+    background-position:center top;
+  	background-size: cover;
+  	height: 20rem;
+  	opacity: 1.2;
+  }
+  .content {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    color: white;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.app1{
+  margin-top: 6rem;
+  margin-left: 9rem;
+}
+.app1 img{
+  border-radius: .8rem;
+}
+
+
+.app2{
+  margin-left: 9rem;
+  margin-top: 3rem;
+}
+
+.slider{
+  height: 250px;
+  margin: auto;
+  position: relative;
+  width: 90%;
+  display: grid;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+  place-items: center;
+}
+.slide-track{
+  display: flex;
+  width: calc(250px * 8);
+  animation: scroll 40s linear infinite;
+
+}
+
+
+.slide-track:hover{
+  animation-play-state:paused ;
+}
+
+@keyframes scroll{
+  0%{
+    transform: translateX(10px);
+  }
+
+  100%{
+    transform: translateX(calc(-250px*8));
+  }
+}
+
+
+
+.slide{
+  height: 250px;
+  width: 250px;
+  display: flex;
+  align-items: center;
+  padding: 15px ;
+  perspective: 100px;
+}
+.slide img{
+  width: 10rem;
+}
+ .slide img:hover{
+  transform: translateZ(20px);
+}
+
+.slider::before,
+.slider::after{
+  background: linear-gradient(to right, rgba(255,255,255,1)0%,rgba(255,255,255,0)100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+.slider::before{
+  left: 0;
+  top: 0;
+}
+.slider::after{
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.footer{
+background-position: center;
+background-size: cover;
+  width: 80rem;
+  margin-top: 2rem;
+}
+.footer a{
+  color: white;
+  margin-left: 2rem;
+  display: block;
+  margin-top: 1.3rem;
+}
+.footer #servi a{
+  display: block;
+  color: white;
+margin-top: 2rem;
+}
+.footer #contact{
+  margin-left: -3rem;
+}
+.footer #button{
+  margin-left: 4rem;
+}
+.footer button{
+  border-radius: 50%;
+}
+
+
+</style>
+<body>
+<div class="main">
+	<section class="head">
+		<nav class="navbar fixed-top navbar-expand-lg navbar-dark ">
+<a class="navbar-brand" href="apptech.html">
+    <img id="img" src="logo-w.png" width="110" height="80" class="d-inline-block align-top" alt="">
+    
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+    <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+      <li class="nav-item active">
+        <a class="nav-link" href="apptech.html" style="color: white; font-weight: ; margin-left: 1rem;">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="aptabout.html" style="color: white; font-weight: ; margin-left: 1rem;">About Us</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: white; font-weight: ; margin-left: 1rem;">
+          Services
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="service1.html" style="color: black; font-weight:;">Web developement</a>
+          <a class="dropdown-item" href="service2.html" style="color: black; font-weight: ;">App developement</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="service3.html" style="color: black; font-weight:;">Digital marketting</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="carreers.html" style="color: white; font-weight: ; margin-left: 1rem;">Careers</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html" style="color: white; font-weight: ; margin-left: 1rem;">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="ourteam.html" style="color: white; font-weight: ; margin-left: 1rem;">Our team</a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link " href="contact.html" style="color: white; font-weight: ; margin-left: 1rem;">Contact Us</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="content">
+	<h1> Application developement</h1>
+</div>
+	</section>
+<div class="app1">
+  <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6">
+      <img src="app.png" class="img-fluid">
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6" >
+      <h2>Make Your Business Smart !!
+
+</h2>
+
+<p style="color:gray">Our Mobile Application development spans from simple consumer mobile apps to complex enterprise mobility solutions.</p>
+<h4>Android App Development
+</h4>
+<p style="color:gray">Our Android development spans from simple<br> consumer mobile apps to complex enterprise mobility <br>solutions. Our mobile team employ Agile software<br> development methodology, which considerably assists<br> them in delivering impeccable performance results and<br> high-quality mobile solutions within a pre-determined <br>development schedule.</p>
+
+    </div>
+  </div>
+</div>
+
+
+<div class="app2">
+  <div class="row">
+    <div class="col-lg-12">
+      <p style="color:gray">At present, Mobile applications are turning into an essential part of your personal lives and business lives. When your customer is continuously on the move, you cannot afford to bind your business to just conventional contact points. Your consumers expect access to reports, systems, games, information, applications – everywhere, anytime, to stay connected, to stay in advance of the game. We are such a Mobile Application Development Company in India that focuses in creating best possible mobile application solutions. We plan and develop elegant and working iPhone apps, HTML5 Smartphone-optimized websites, Hybrid Apps, Android apps.</p>
+      <h4>IOS app developement</h4>
+      <p style="color:gray">We have a team of experienced developers who specialize in iOS development and are designated for your project. Our iOS development services include consulting, product strategy, UX/UI development, testing, and technical delivery. Appteq handles the entire App Store submission process including, the listing, description, assets, and more. We offer personalized maintenance and support packages on top of our iOS development services that help you manage platform updates and ongoing version releases.
+
+</p>
+      <h2>Why Appteq?</h2>
+      <br>
+      <p style="color:gray">
+        Android is most popular and user-friendly mobile platform which comes from a wide range of manufactures having a variety of hardware configuration with multiple sizes. Its vast number of configurations make application development challenging.
+        <br><br>
+
+Our smart innovations deliver the native android application for smartphone and tablets developed in Android Studio with Java as the development language. We ensure that our apps are being developed and tested in various screen sizes and OS versions. We also help you deploy and market apps on Google Play Store. Based on customers requirement we include analytic tools like Google Analytics, Crashlytics etc. during app development.
+
+
+      </p>
+
+
+
+    </div>
+  </div>
+</div>
+
+
+<div class="clients">
+    <h3 style="text-align: center;">Our clients</h3>
+
+
+<div class="slider">
+  <div class="slide-track">
+    <div class="slide">        <img src="lmw.png">
+</div>
+    <div class="slide">        <img src="jsb-c.png">
+</div>
+    <div class="slide">        <img src="jsb.png" >
+</div>
+    <div class="slide">        <img src="sanyaa.png">
+</div>
+    <div class="slide">        <img src="enit.png">
+</div>
+    <div class="slide">        <img src="pnp.png">
+</div>
+    <div class="slide">        <img src="rigelsoft.png" >
+</div>
+    <div class="slide">        <img src="yb.png">
+</div>
+<div class="slide">        <img src="lmw.png">
+</div>
+    <div class="slide">        <img src="jsb-c.png">
+</div>
+    <div class="slide">        <img src="jsb.png" >
+</div>
+    <div class="slide">        <img src="sanyaa.png">
+</div>
+    <div class="slide">        <img src="enit.png">
+</div>
+    <div class="slide">        <img src="pnp.png">
+</div>
+    <div class="slide">        <img src="rigelsoft.png" >
+</div>
+    <div class="slide">        <img src="yb.png">
+</div>
+
+  </div>
+</div>
+</div>
+
+
+<div class="footer" style="background:url(coding.jpg)no-repeat;
+  width: 100vw;">
+ <div class="row">
+   <div class="col-lg-4 col-12"><img src="logo-w.png" style="height:4rem;width: 5rem; margin-left:4rem;margin-top: 4rem;">
+    <p style="color:white; margin-top: 1rem;margin-left: 4rem;">Appteq has proven expertise in providing quality IT development services. The dawn of the internet as a media has literally made the world a smaller place and phenomenally changed the way business is done, globally.</p>
+  <div id="button"><button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="120k followers" style="background: blue">
+  <i class="fa fa-twitter" aria-hidden="true" style="color:white;"></i>
+</button>
+<button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="170k followers" style="background: darkblue;">
+  <i class="fa fa-facebook-square" aria-hidden="true" style="color:white;"></i>
+</button>
+<button type="button" class="btn" data-toggle="tooltip" data-placement="bottom" title="140k followers" style="background: red">
+<i class="fa fa-youtube-play" aria-hidden="true" style="color:white"></i></button>
+</div>
+</div>
+      <div class="col-lg-2  col-12">
+        <h4 style="color: white; margin-top: 6rem">Useful Links</h4>
+        
+          <a href="#">about us</a>
+                    <a href="#">careers</a>
+          <a href="#">Our team</a>
+          <a href="#">contact us</a>
+
+        
+      </div>
+   <div class="col-lg-3 col-12" id="servi">
+     <h4 style="color:white;margin-top: 6rem;">Our Services</h4>
+     <a href="#">web developement</a>
+     <a href="#">app developement</a>
+     <a href="#">digital marketting</a>
+
+   </div>
+   <div class="col-lg-3 col-12" id="contact">
+     <h4 style="color:white;  margin-top: 6rem;">Contact Info</h4>
+     <p style="color:white; margin-top: 2rem">Call : +91 99523 15815<br>
+Mail : info@appteq.in<br>
+Address : FORGE FACTORY, G Floor, KCT Tech Park, #3 Athipalayam Road,<br> Chinnavedampatti, Coimbatore, Tamil Nadu 641049</p>
+   </div>
+
+ </div>
+ <hr style="border-top: .1rem solid white;">
+ <p style="color:white;text-align: center;">Copyrights © 2021. All rights reserved by AppTeq</p>
+</div>
+
+
+</body>
+
+
+
+<script type="text/javascript">$(document).ready(function(){
+  $(window).scroll(function(){
+    var scroll = $(window).scrollTop();
+    if (scroll > 50) {
+      $(".navbar").css("background" , "darkblue");
+            $('.navbar li a').css("color","white");
+
+
+
+    }
+
+    else{
+      $(".navbar").css("background" , "none");  
+                  $('.navbar li a').css("color","white");
+ 
+    }
+  })
+})
+
+</script>
+
+
+</html>

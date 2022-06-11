@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Mono:ital,wght@1,500&family=Roboto:wght@400;500&display=swap');
+
+*{
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+	padding: 0;
+
+}
+header{
+	
+}
+.navbar{
+
+	background: transparent;
+}
+.navbar-brand{
+	margin-left: 10rem;
+}
+.nav_link{
+	color: rgb(0, 0, 128);/**navy blue**/
+}
+
+.home .carousel-item{
+	min-height: 100vh;
+	background-position: center;
+	background-size: cover;
+
+}
+ .home .carousel-item .content{
+
+ 	left: 20%;
+ 	top: 50%;
+ 
+ margin-left: 10rem ;
+ margin-top: 10rem;
+ }
+
+ .home .carousel-item .content button{
+ 	border: .1rem solid rgb(0, 0, 128);
+ 	height: 3rem;
+ 	width: 6rem;
+ 	border-radius: 1rem;
+ }
+
+.home .carousel-item .content h2{
+	color: rgb(0, 0, 128);
+}
+
+.home .carousel-indicators li{
+	height: 2rem;
+	width: 12rem;
+	background: rgb(0, 0, 128);
+	color: white;
+	text-align: center;
+
+	padding-top: 1rem;
+	text-indent: unset;
+}
+
+#home1{
+	margin-top: 10rem;
+	margin-left: 10rem;
+}
+
+#home1 .card{
+	height: 16rem;
+	background: darkblue;
+	color: white;
+}
+.services{
+		background: rgb(232,232,232);
+margin-top: 3rem;
+	
+}
+
+.services #card {
+height: 21rem;
+width: 22rem;
+background: white;
+color: black;
+border: .1rem solid whitesmoke;
+border-radius: 2rem;
+margin-bottom: 1rem;
+margin-left: 6rem;
+}
+.clients{
+	margin-top: 2rem;
+}
+.clients .card{
+	height: 10rem;
+	width: 15rem;
+	margin-top: 2rem;
+	margin-left: 3rem;
+	border-radius: 2rem;
+	box-shadow: .2rem .2rem .1rem rgba(0, 0, 0, .2);
+}
+.clients .card img{
+	height: 12rem;
+	margin-top: -1rem;
+}
+
+.footer{
+	background: #333;
+background-size: cover;
+	
+	width: 80rem;
+	margin-top: 2rem;
+}
+.footer a{
+	color: white;
+	margin-left: 2rem;
+	display: block;
+	margin-top: 1.3rem;
+}
+.footer #servi a{
+	display: block;
+	color: white;
+margin-top: 2rem;
+}
+.footer #contact{
+	margin-left: -3rem;
+}
+.footer #button{
+	margin-left: 4rem;
+}
+.footer button{
+	border-radius: 50%;
+}
+.white{
+  position:fixed;
+  top:0;
+  background:blue;
+  width:100%;
+  height:50px;
+}
